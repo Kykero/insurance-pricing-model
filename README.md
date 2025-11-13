@@ -28,4 +28,27 @@ L’ensemble constitue une chaîne de calcul prédictive permettant d’estimer 
 
 ---
 
+## 🧱 Données utilisées
 
+Le projet utilise les données extraites de [Kaggle](https://www.kaggle.com/datasets/floser/french-motor-claims-datasets-fremtpl2freq?resource=download)
+
+Chaque observation comprend notamment :
+- `DrivAge` : âge du conducteur  
+- `BonusMalus` : coefficient de bonus-malus  
+- `VehGas` : Le type d'essence utilisé par le véhicule 
+- `ClaimNb` : Le nombre d'accidents
+- `Area` : La zone de l'accident
+- `VehPower` : puissance du véhicule  
+- `region` : zone géographique (Urbaine / Suburbaine / Rurale)  
+- `VehAge` : âge du véhicule  
+- `exposure` : durée d’exposition (en années)  
+- `VehBrand` : La marque du véhicule
+
+Ces variables influencent la probabilité d’avoir un sinistre et son coût moyen.
+
+## ⚙️ Méthodologie
+
+1. **Prétraitement des données**
+   - Standardisation des variables numériques
+   - Encodage One-Hot des variables catégorielles
+   - Séparation des jeux d’entraînement et de test
